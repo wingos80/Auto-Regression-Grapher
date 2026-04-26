@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../src/ar_model.h"
+#include "ar_model.h"
 // #define CHECK_STATS(data, expected_mean, expected_var) \
 //     do { \
 //         auto [mean, var] = compute_stats(data); \

@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <gtest/gtest.h>
-#include "../src/ar_model.h"
+#include "ar_model.h"
 
 class ARModelGenerateTest : public ::testing::Test {
 protected:
@@ -15,7 +15,7 @@ TEST_F(ARModelGenerateTest, ResultLength){
 }
 
 TEST_F(ARModelGenerateTest, ResultStability){
-    // in reasonable cases result should never explode    
+    // in reasonable cases result should never explode
     ASSERT_TRUE(std::all_of(result.begin(), result.end(), [](float n) {return n < 100.0f && n > -100.0f;}));
 }
 

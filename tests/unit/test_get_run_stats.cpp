@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../src/ar_model.h"
+#include "ar_model.h"
 
 class GetRunStatsTest : public ::testing::Test {
 protected:
